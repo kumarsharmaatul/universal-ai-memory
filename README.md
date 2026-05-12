@@ -1,101 +1,41 @@
-# Universal AI Memory
+# 🧠 Universal AI Memory
 
-A portable memory system for AI coding agents and vibe coding workflows.
-
-This project provides a universal `memory/` structure that can be shared across:
-
-- GPT
-- Claude
-- Gemini
-- DeepSeek
-- Cursor
-- Windsurf
-- Cline
-- Any AI coding assistant
+**Universal AI Memory** is a standardized, markdown-based framework designed to maintain long-term project context and continuity across various AI agents (e.g., GPT, Claude, Gemini). By utilizing a dedicated memory layer, this repository eliminates "context loss" when switching between different AI models or development sessions.
 
 ---
 
-# Goal
+## 🎯 The Vision
+Modern AI development often suffers from fragmented context. When you move from one session to another—or switch tools (from Cursor to Windsurf, for example)—the AI loses the intricate details of your project. This repository acts as a **Persistent Memory Layer**, ensuring that any AI agent can instantly "onboard" itself and understand the current state, rules, and history of the project.
 
-Create a standardized memory layer that survives model switching and helps AI agents maintain project context.
+## 📂 Memory Structure
 
----
+All core context is stored within the `/memory` directory. Each file serves a specific functional purpose:
 
-# Folder Structure
+| File Name | Description |
+| :--- | :--- |
+| **`project.md`** | High-level project overview, core objectives, and vision. |
+| **`architecture.md`** | System design, data flow diagrams, and structural logic. |
+| **`stack.md`** | Technical specifications, frameworks, and dependency details. |
+| **`rules.md`** | Coding standards, operational constraints, and best practices. |
+| **`tasks.md`** | Roadmap and tracking for pending, active, and completed tasks. |
+| **`progress.md`** | Log of development milestones and historical updates. |
+| **`bugs.md`** | Dedicated tracker for known issues and their resolved fixes. |
+| **`decisions.md`** | Documentation of key architectural and logical choices. |
+| **`lessons.md`** | Insights, self-corrections, and model training notes. |
+| **`prompts.md`** | Optimized system prompts and interaction templates. |
 
-```txt
-memory/
-│
-├── project.md
-├── architecture.md
-├── stack.md
-├── rules.md
-├── decisions.md
-├── tasks.md
-├── progress.md
-├── bugs.md
-├── prompts.md
-├── api.md
-├── database.md
-├── ui_ux.md
-├── security.md
-├── testing.md
-├── deployment.md
-├── changelog.md
-│
-├── agents/
-│   ├── gpt.md
-│   ├── claude.md
-│   ├── gemini.md
-│   └── deepseek.md
-│
-├── features/
-│   ├── auth.md
-│   ├── payments.md
-│   ├── dashboard.md
-│   └── chat.md
-│
-└── sessions/
-    ├── 2026-05-11.md
-    ├── 2026-05-12.md
-    └── current.md
-```
+## 🛠️ Usage Guidelines
+
+To ensure maximum efficiency when working with an AI assistant (like **Max**), follow these protocols:
+
+1. **Initialization:** Always instruct the AI to read the `/memory` directory at the start of a session to sync with the current project state.
+2. **Real-time Updates:** After completing a significant task, the AI should update the relevant files (e.g., `tasks.md` and `progress.md`) to reflect the changes.
+3. **Decision Logging:** Any change in logic or strategy must be recorded in `decisions.md` to prevent future regressions.
+
+## ✨ Key Advantages
+* **Zero Context Loss:** Seamlessly transition between different AI models without re-explaining project details.
+* **Model Agnostic:** Works with any LLM (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, DeepSeek).
+* **Version Controlled:** Since the memory is stored in Markdown, every update is tracked via Git, providing a clear history of project evolution.
 
 ---
-
-# Usage
-
-Tell your AI model:
-
-```txt
-Read the /memory folder before starting work.
-Update memory files after completing tasks.
-```
-
----
-
-# Benefits
-
-- Persistent context across models
-- Better AI collaboration
-- Shared project memory
-- Git-friendly workflow
-- Open-source standardization
-- Easier onboarding for teams
-
----
-
-# Future Ideas
-
-- MCP integration
-- IDE plugins
-- Auto summarization
-- Vector memory support
-- Semantic search
-- Token optimization
-
----
-
-# License
-
-MIT
+**Maintained by [Atul Sharma](https://github.com/kumarsharmaatul) & Max (AI Assistant)**
