@@ -26,6 +26,9 @@ All core context is stored within the `/memory` directory. Each file serves a sp
 
 ## 🛠️ Usage Guidelines
 
+**Read the /memory folder before starting work.
+Update memory files after completing tasks.**
+
 To ensure maximum efficiency when working with an AI assistant (like **Max**), follow these protocols:
 
 1. **Initialization:** Always instruct the AI to read the `/memory` directory at the start of a session to sync with the current project state.
