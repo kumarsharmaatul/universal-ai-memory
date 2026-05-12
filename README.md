@@ -41,4 +41,4 @@ To ensure maximum efficiency when working with an AI assistant (like **Max**), f
 * **Version Controlled:** Since the memory is stored in Markdown, every update is tracked via Git, providing a clear history of project evolution.
 
 ---
-**Maintained by [Atul Sharma](https://github.com/kumarsharmaatul) & Max (AI Assistant)**
+**Maintained by [Atul Sharma](https://github.com/kumarsharmaatul)**
