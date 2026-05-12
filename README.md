@@ -25,7 +25,7 @@ All core context is stored within the `/memory` directory. Each file serves a sp
 | **`prompts.md`** | Optimized system prompts and interaction templates. |
 
 ## 🛠️ Usage Guidelines
-
+**Prompt-: **
 **Read the /memory folder before starting work.
 Update memory files after completing tasks.**
 
