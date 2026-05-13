@@ -25,18 +25,24 @@ All core context is stored within the `/memory` directory. Each file serves a sp
 | **`prompts.md`** | Optimized system prompts and interaction templates. |
 
 ## 🛠️ Usage Guidelines
-**Prompt-: **
-**Read the /memory folder before starting work.
-Update memory files after completing tasks.**
 
-To ensure maximum efficiency when working with an AI assistant (like **Max**), follow these protocols:
+This repository is designed to be **autonomous**. If you use a compatible AI editor (like Cursor), you no longer need to manually prompt the AI to read the memory.
 
-1. **Initialization:** Always instruct the AI to read the `/memory` directory at the start of a session to sync with the current project state.
-2. **Real-time Updates:** After completing a significant task, the AI should update the relevant files (e.g., `tasks.md` and `progress.md`) to reflect the changes.
-3. **Decision Logging:** Any change in logic or strategy must be recorded in `decisions.md` to prevent future regressions.
+### Automated Workflow (Recommended)
+1.  **Cursor Editor**: The `.cursorrules` file at the root automatically instructs the AI to read and update the `/memory` directory.
+2.  **Proactive Learning**: The model is instructed to log all mistakes in `lessons.md` so it never repeats them.
+3.  **Automatic State Sync**: After completing a task, the model will update `tasks.md` and `progress.md` without being told.
+
+### Manual Initialization (If needed)
+If you are using a tool that doesn't support automatic rules, use this system prompt:
+> **"Read the /memory folder before starting work. Update memory files after completing tasks. Log all mistakes in lessons.md."**
+
+---
 
 ## ✨ Key Advantages
-* **Zero Context Loss:** Seamlessly transition between different AI models without re-explaining project details.
+* **Zero Context Loss:** Seamlessly transition between different AI models.
+* **Proactive Correction:** The model "trains" itself by recording its own mistakes.
+* **Autonomous Maintenance:** Memory updates happen in the background as part of the AI's workflow.
 * **Model Agnostic:** Works with any LLM (GPT-4o, Claude 3.5 Sonnet, Gemini 1.5 Pro, DeepSeek).
 * **Version Controlled:** Since the memory is stored in Markdown, every update is tracked via Git, providing a clear history of project evolution.
 

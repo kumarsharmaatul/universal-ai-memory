@@ -1,6 +1,7 @@
 # Tasks
 
 ## High Priority
+- [x] Automate memory reading and updates via `.cursorrules`
 - [ ] Add authentication
 - [ ] Setup API
 
