@@ -35,7 +35,7 @@ This repository is designed to be **autonomous**. If you use a compatible AI edi
 
 ### Manual Initialization (If needed)
 If you are using a tool that doesn't support automatic rules, use this system prompt:
-> **"Read the /memory folder before starting work. Update memory files after completing tasks. Log all mistakes in lessons.md."**
+> **"Read the /memory folder first to understand the project state and past lessons. Follow the rules in memory/rules.md. After every task, update tasks.md, progress.md, and log any mistakes or new learnings in lessons.md. You are responsible for keeping this memory synchronized."**
 
 ---
 
